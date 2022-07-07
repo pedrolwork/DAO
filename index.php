@@ -29,13 +29,20 @@ echo json_encode($usuarios);*/
 //echo $aluno;
 
 //Fazer alteracoes nos usuarios
+//$usuario = new Usuario();
+//$usuario->loadById(3);
+//$usuario->update("professores", "!@#$%&");
+//echo $usuario;
+
+//Deletar linhas de usuario
 
 $usuario = new Usuario();
 
-$usuario->loadById(3);
+$usuario->loadById(7);
 
-$usuario->update("professores", "!@#$%&");
+$usuario->delete();
 
 echo $usuario;
+
 
  ?>
