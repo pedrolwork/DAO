@@ -24,10 +24,18 @@ echo json_encode($usuarios);*/
 //echo $usuario;
 
 //Inserir aluno novo
-$aluno = new Usuario("Felix", "Raba");
+//$aluno = new Usuario("Felix", "Raba");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
+//Fazer alteracoes nos usuarios
 
-echo $aluno;
+$usuario = new Usuario();
+
+$usuario->loadById(3);
+
+$usuario->update("professores", "!@#$%&");
+
+echo $usuario;
 
  ?>
